@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000310;
+    color: rgb(150, 255, 153);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.centered-content img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .centered-content h1 {
+        font-size: 1.5em;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally center */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: rgb(148, 85, 182);
+    color: #000310;
+    cursor: pointer;
+    margin: 0 10px; /* Adds spacing between buttons */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 0px 10px 0px #001050; /* Green shadow */
+}
+
+.button:hover {
+    background-color: rgb(135, 71, 170); /* Slightly transparent white on hover */
+    box-shadow: 0px 0px 15px 0px #001050; /* Slightly larger green shadow on hover */
+}
+
+/* ... your existing CSS ... */
+
+/* ... your existing CSS ... */
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(1px, -1px); }
+    60% { transform: translate(-1px, -1px); }
+    80% { transform: translate(1px, 1px); }
+    100% { transform: translate(0); }
+  }
+  
+  .vibrating {
+    animation: vibrate 0.1s linear infinite;
+  }
+  
+  #bottomText {
+    color: #ffffff;         /* Setting the text color */
+    position: fixed;        /* Makes the element positioned relative to the browser window */
+    bottom: 0;              /* Aligns the element to the bottom of the window */
+    width: 100%;            /* Ensures the div spans the full width of the window */
+    text-align: center;     /* Centers the text inside the div */
+    padding: 10px 0;        /* Adds some padding above and below the text */
+    font-size: 16px;        /* Adjust the font size as needed */
+    /* Add any additional styling you desire here */
+  }
+  
